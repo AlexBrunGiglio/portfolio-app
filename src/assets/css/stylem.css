@@ -872,6 +872,7 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 	box-shadow: 0px 0px 20px rgba(0,0,0,.2);
 	padding: 40px 50px;
 	background-color: #fff;
+	border-radius: 7px;
 	top: 0px;
 	
 	-webkit-transition: all .3s ease;
@@ -1532,6 +1533,7 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 .arlo_tm_contact .fields .first{
 	width: 100%;
 	float: left;
+	border-radius: 10px;
 }
 .arlo_tm_contact .fields ul{
 	margin: 0px 0px 0px -30px;
