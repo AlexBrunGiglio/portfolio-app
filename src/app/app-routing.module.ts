@@ -10,6 +10,7 @@ import { SkillsComponent } from './skills/skills.component';
 
 const routes: Routes = [
   { path : 'about', component: AboutComponent},
+  { path: '', redirectTo: '/about', pathMatch: 'full'},
   { path : 'blog', component: BlogComponent},
   { path : 'contact', component: ContactComponent },
   { path : 'experience', component: ExperienceComponent },

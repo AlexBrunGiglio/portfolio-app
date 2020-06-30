@@ -91,7 +91,7 @@ function arlo_tm_bg_nav(){
 		var menu	 		= jQuery('.arlo_tm_classic_menu');
 		var WinOffset		= jQuery(window).scrollTop();
 		
-		if(WinOffset >= 150){
+		if(WinOffset >= 10){
 			menu.addClass('animate');
 		}else{
 			menu.removeClass('animate');
@@ -469,7 +469,7 @@ function arlo_tm_animate_text(){
 	var animateSpan			= jQuery('.arlo_tm_animation_text_word');
 	
 		animateSpan.typed({
-			strings: ["Freelancer", "Web Developer", "Photographer"],
+			strings: ["un étudiant", "un developpeur web jr", "un passionné"],
 			loop: true,
 			startDelay: 1e3,
 			backDelay: 2e3

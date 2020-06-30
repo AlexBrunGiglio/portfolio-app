@@ -433,7 +433,7 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 	justify-content: space-between;
 }
 .arlo_tm_classic_menu .inner .logo img{max-width: 50px;}
-.arlo_tm_classic_menu .inner .logo .dark{display: block;}
+.arlo_tm_classic_menu .inner .logo .dark{display: none;}
 .arlo_tm_classic_menu .inner .menu ul{
 	list-style-type: none;
 	margin: 0px;
@@ -1907,7 +1907,7 @@ body.dark .arlo_tm_classic_menu.animate .logo .light{display: block;}
 body.dark .arlo_tm_classic_menu.animate .logo .dark{display: none;}
 body.dark .arlo_tm_classic_menu.animate .menu ul li a{color: #fff;}
 body.dark .arlo_tm_classic_menu.animate .menu ul li a:hover{color: #4778ff;}
-body.dark .arlo_tm_logo_author .image .main:before{background-color: rgba(255,255,255,.15);}
+body.dark .arlo_tm_logo_author .image .main:before{background-color: rgb(255, 255, 255,.15);}
 
 /*---------------------------------------------------*/
 /*	 18. ARLO PARTICLE DEMO
