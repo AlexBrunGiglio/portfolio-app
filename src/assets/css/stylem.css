@@ -433,7 +433,7 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 	justify-content: space-between;
 }
 .arlo_tm_classic_menu .inner .logo img{max-width: 50px;}
-.arlo_tm_classic_menu .inner .logo .dark{display: none;}
+.arlo_tm_classic_menu .inner .logo .dark{display: block;}
 .arlo_tm_classic_menu .inner .menu ul{
 	list-style-type: none;
 	margin: 0px;
@@ -445,7 +445,8 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 .arlo_tm_classic_menu .inner .menu ul li:last-child{margin-right: 0px;}
 .arlo_tm_classic_menu .inner .menu ul li a{
 	text-decoration: none;
-	color: #fff;
+	color: rgb(0, 0, 0);
+	
 	
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
@@ -455,7 +456,7 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 }
 .arlo_tm_classic_menu.animate{
 	padding: 25px 0px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 20px rgba(0,0,0,.2);
 }
 .arlo_tm_classic_menu.animate .logo .dark{display: block;}
