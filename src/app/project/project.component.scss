@@ -1,0 +1,19 @@
+$blue : #4778ff;
+
+.text-color p {
+    color: $blue;    
+    display: inline;
+}
+
+.custom-cards {
+    height: 350px !important;
+}
+
+.custom-button {
+    color: #ffff;
+    margin-top: 40px;
+}
+
+.btn {
+    background-color: $blue;
+}
