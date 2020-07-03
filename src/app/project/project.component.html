@@ -7,42 +7,17 @@
             </div>
             <div class="service_inner">
                 <ul>
-                    <li>
-                        <div class="inner custom-cards" *ngFor="let repo of repos">
+                    <li *ngFor="let repo of repos">
+                        <div class="inner custom-cards">
                             <img class="svg custom-svg" src="assets/img/svg/source.svg" alt="" />
                             <h3>{{repo.name}}</h3>
-                            <p>Project Description</p>
+                            <div *ngIf="repo.description; else elseBlock">{{repo.description}}</div>
+                            <ng-template #elseBlock><p>Pas de description.</p></ng-template>
                             <div class="text-color">
-                                Language :<p> TEST </p>
+                                Language :<p> {{repo.language}} </p>
                             </div>
                             <div class="custom-button">
-                                <a class="btn">Repo Github</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="inner custom-cards">
-                            <img class="svg" src="assets/img/svg/source.svg" alt="" />
-                            <h3>Project Title</h3>
-                            <p>Project Description</p>
-                            <div class="text-color">
-                                Language :<p> TEST </p>
-                            </div>
-                            <div class="custom-button">
-                                <a class="btn">Repo Github</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="inner custom-cards">
-                            <img class="svg" src="assets/img/svg/source.svg" alt="" />
-                            <h3>Project Title</h3>
-                            <p>Project Description</p>
-                            <div class="text-color">
-                                Language :<p> TEST </p>
-                            </div>
-                            <div class="custom-button">
-                                <a class="btn">Repo Github</a>
+                                <a class="btn" target="blank" href="{{repo.html_url}}">Repo Github</a>
                             </div>
                         </div>
                     </li>
