@@ -1,5 +1,5 @@
 <div class="arlo_tm_rightpart no_padding">
-    <div class="rightpart_inner">
+    <div class="rightpart_inner" *ngFor="let info of infos">
 
         <!-- HOME -->
         <div class="arlo_tm_section" id="home">
@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div class="arlo_tm_arrow_classic bounce anchor">
-                    <a href="#about"><i class="xcon-angle-double-down"></i></a>
+                    <a href="#about"><i class="fas fa-chevron-down"></i></a>
                 </div>
             </div>
         </div>
@@ -33,15 +33,18 @@
                     <div class="container">
                         <div class="about_inner">
                             <div class="leftbox">
-                                <div class="about_image_wrap parallax" data-relative-input="true">
+                                <!-- <div class="about_image_wrap parallax" data-relative-input="true">
                                     <div class="image layer" data-depth="0.1">
+                                        <img src="assets/img/about/profil.png">
                                         <img src="assets/img/about/550x650.jpg" alt="" />
-                                        <div class="inner" data-img-url="assets/img/about/profil.png"></div>
                                     </div>
                                     <div class="border layer" data-depth="0.2">
                                         <img src="assets/img/about/550x650.jpg" alt="" />
                                         <div class="inner"></div>
                                     </div>
+                                </div> -->
+                                <div class="inner">
+                                    <img class="rounded" src="assets/img/about/profil.png">
                                 </div>
                             </div>
                             <div class="rightbox">
@@ -51,67 +54,50 @@
                                 </div>
                                 <div class="text">
                                     <p>
-                                        Originaire d'Ajaccio, je suis titulaire d'un Bac S Science de l'ingénieur avec
-                                        <span>mention</span> Depuis quelques années maintenant j'ai développé une
-                                        véritable passion
-                                        pour les nouvelles technologies et celles du monde de demain.
-                                        <br> En effet avec l'évolution des technologies le monde s'oriente vers le
-                                        digital et le numérique.
-                                        Egalement passioné de jeux vidéo, je partage ce divertissement avec mes amis.
-                                        <br>En 2018 je suis entré en première année de bachelor dans l'école supérieure
-                                        du numérique Ingésup, située sur le campus Ynov à Aix-en-Provence.
-                                        Dans cette école je peux travailler et acquérir de nouvelles compétences dans le
-                                        développement
-                                        web, l'infrastructure réseaux, la cybersécurité et le développement de
-                                        logiciels. J'ai à l'heure actuelle élaboré un profil de développeur web front.
-                                        Je cherche à améliorer l'expérience utilisateur sur différentes technologies.
-                                        Bientôt à la recherche d'une alternance je suis intéressé par des projets qui me
-                                        permettront de m'épanouir et d'améliorer mes compétences lors de stages.
+                                        {{ info.description }}
                                     </p>
                                 </div>
                                 <div class="about_short_contact_wrap">
                                     <ul>
                                         <li>
                                             <img class="svg" src="assets/img/svg/gift.svg" alt="" />
-                                            <span><label>Anniversaire:</label> 25.02.2000</span>
-                                        </li>
-                                        <li>
-                                            <img class="svg" src="assets/img/svg/calendar-4.svg" alt="" />
-                                            <span><label>Age:</label> 20</span>
+                                            <span><label>Né le :</label>
+                                                {{ info.birth | date :'dd-MM-yyyy'}}</span>
                                         </li>
                                         <li>
                                             <img class="svg" src="assets/img/svg/location-1.svg" alt="" />
-                                            <span><label>Naissance:</label> <a class="href_location" href="#">
-                                                    Ajaccio</a></span>
+                                            <span><label>Ville de naissance :</label> <a class="href_location" href="#">
+                                                    {{ info.ville }}</a></span>
                                         </li>
                                         <li>
                                             <img class="svg" src="assets/img/svg/car.svg" alt="" />
-                                            <span><label>Permis:</label> B </span>
+                                            <span><label>Permis:</label> {{ info.permis }} </span>
                                         </li>
                                         <li>
                                             <img class="svg" src="assets/img/svg/study-5.svg" alt="" />
                                             <span><label>Ecole:</label> <a class="href_location" href="#">
-                                                    Ynov Campus Aix</a></span>
+                                                    {{ info.ecole }}</a></span>
                                         </li>
                                         <li>
                                             <img class="svg" src="assets/img/svg/degree-1.svg" alt="" />
-                                            <span><label>Niveau:</label> Bachelor</span>
-                                        </li>
-                                        <li>
-                                            <img class="svg" src="assets/img/svg/message-3.svg" alt="" />
-                                            <span><label>Mail:</label> <a
-                                                    href="mailto:alexandre.brungiglio@ynov.com">alexandre.brungiglio@ynov.com</a></span>
+                                            <span><label>Niveau:</label> {{ info.niveau }}</span>
                                         </li>
                                         <li>
                                             <img class="svg" src="assets/img/svg/call-2.svg" alt="" />
                                             <span><label>Phone:</label> <a href="tel:+33619292924">
-                                                    0619292924</a></span>
+                                                    {{ info.tel }}</a></span>
+                                        </li>
+                                        <li>
+                                            <img class="svg" src="assets/img/svg/message-3.svg" alt="" />
+                                            <span><strong>Mail: </strong><a
+                                                    href="mailto:alexandre.brungiglio@ynov.com">{{ info.email }}</a></span>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="buttons" style="border-radius: 10px;">
                                     <ul>
-                                        <li><a href="#"><span>Mon CV</span></a></li>
+                                        <li><a href="../../assets/img/CV.pdf" target="blank"><span>Mon CV</span></a>
+                                        </li>
                                         <li><a routerLink="/contact"><span>Me contacter ?</span></a></li>
                                     </ul>
                                 </div>

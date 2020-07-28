@@ -10,6 +10,7 @@ export class BlogComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    window.location.href = 'https://blog.alexandrebrungiglio.fr'
   }
 
 }
