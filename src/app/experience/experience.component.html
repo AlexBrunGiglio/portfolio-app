@@ -12,80 +12,26 @@
                         <div class="timeline_inner">
                             <div class="left">
                                 <ul>
-                                    <li>
+                                    <li *ngFor="let school of pros">
                                         <div class="inner">
                                             <img class="svg" src="assets/img/svg/portfolio.svg" alt="" />
-                                            <p class="year">2020 - Current</p>
-                                            <h3 class="title">Alternance Nextalys</h3>
-                                            <p class="text">Web development refers to building, creating, and an
-                                                maintaining websites. It includes aspects such as web design, web
-                                                programming, and database management.</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="inner">
-                                            <img class="svg" src="assets/img/svg/portfolio.svg" alt="" />
-                                            <p class="year">2019 - 2020</p>
-                                            <h3 class="title">Start-Up Peekit</h3>
-                                            <p class="text">Web development refers to building, creating, and an
-                                                maintaining websites. It includes aspects such as web design, web
-                                                programming, and database management.</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="inner">
-                                            <img class="svg" src="assets/img/svg/portfolio.svg" alt="" />
-                                            <p class="year">2018 - 2019 (2 mois)</p>
-                                            <h3 class="title">Crédit Agricole Eimmo</h3>
-                                            <p class="text">Web development refers to building, creating, and an
-                                                maintaining websites. It includes aspects such as web design, web
-                                                programming, and database management.</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="inner">
-                                            <img class="svg" src="assets/img/svg/portfolio.svg" alt="" />
-                                            <p class="year">2018 - 2019</p>
-                                            <h3 class="title">Start-Up Flayck</h3>
-                                            <p class="text">Web development refers to building, creating, and an
-                                                maintaining websites. It includes aspects such as web design, web
-                                                programming, and database management.</p>
+                                            <p class="year">{{ school.date_start | date : 'dd-MM-yyyy' }} | {{ school.date_end | date : 'dd-MM-yyyy' }}</p>
+                                            <h3 class="title">{{ school.title }}</h3>
+                                            <p class="text">{{school.description}}</p>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                             <div class="right mt-4">
                                 <ul>
-                                    <li>
+                                    <li *ngFor="let school of exp">
                                         <div class="inner">
                                             <img class="svg" src="assets/img/svg/degree-5.svg" alt="" />
-                                            <p class="year">2018 - 2020</p>
-                                            <h3 class="title">Ynov Campus Informatique</h3>
-                                            <p class="text">Independent study is a form of education offered by many
-                                                high schools, colleges, and other educational institutions. It is
-                                                sometimes referred to as directed study.</p>
+                                            <p class="year">{{ school.date_start | date : 'dd-MM-yyyy' }} | {{ school.date_end | date : 'dd-MM-yyyy' }}</p>
+                                            <h3 class="title">{{ school.title }}</h3>
+                                            <p class="text">{{school.description}}</p>
                                         </div>
                                     </li>
-                                    <li>
-                                        <div class="inner">
-                                            <img class="svg" src="assets/img/svg/degree-5.svg" alt="" />
-                                            <p class="year">2015 - 2018</p>
-                                            <h3 class="title">Lycée Laetitia Bonaparte</h3>
-                                            <p class="text">Independent study is a form of education offered by many
-                                                high schools, colleges, and other educational institutions. It is
-                                                sometimes referred to as directed study.</p>
-                                        </div>
-                                    </li>
-                                    <!-- <li>
-                                            <div class="inner">
-                                                <img class="svg" src="assets/img/svg/degree-5.svg" alt="" />
-                                                <p class="year">1996 - 2006</p>
-                                                <h3 class="title">Secondary School</h3>
-                                                <p class="text">Independent study is a form of education offered by many
-                                                    high schools, colleges, and other educational institutions. It is
-                                                    sometimes referred to as directed study.</p>
-                                            </div>
-                                        </li> -->
                                 </ul>
                             </div>
                         </div>

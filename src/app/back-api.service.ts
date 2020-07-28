@@ -18,7 +18,7 @@ export class BackApiService {
     return this.httpClient.get('http://127.0.0.1:8000/api/skills')
   }
 
-  public getSchool(): Observable<Schools[]>{
-    return this.httpClient.get<Schools[]>('http://127.0.0.1:8000/api/parcours');
+  public getSchool(){
+    return this.httpClient.get('http://127.0.0.1:8000/api/parcours');
   }
 }
