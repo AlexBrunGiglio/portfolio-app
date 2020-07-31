@@ -11,18 +11,18 @@ export class BackApiService {
   constructor(private httpClient: HttpClient) { }
 
   public getInfos(){
-    return this.httpClient.get(`http://185.163.127.73:8080/api/infos`);
+    return this.httpClient.get(`https://api.alexandrebrungiglio.fr/api/infos`);
   }
 
   public getSkills(){
-    return this.httpClient.get('http://185.163.127.73:8080/api/skills')
+    return this.httpClient.get('https://api.alexandrebrungiglio.fr/api/skills')
   }
 
   public getSchool(){
-    return this.httpClient.get('http://185.163.127.73:8080/api/parcours');
+    return this.httpClient.get('https://api.alexandrebrungiglio.fr/api/parcours');
   }
 
   public postMail(mail){
-    return this.httpClient.post('http://185.163.127.73:8080/api/mail', mail);
+    return this.httpClient.post('https://api.alexandrebrungiglio.fr/api/mail', mail);
   }
 }
