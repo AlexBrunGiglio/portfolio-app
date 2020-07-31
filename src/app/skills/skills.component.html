@@ -17,7 +17,7 @@
                                     </div>
                                     <ul>
                                         <li *ngFor="let skill of utilise">
-                                            <a target="blank" href="{{ skill.url }}">
+                                            <a target="blank" href="{{ skill.url }}" data-toggle="tooltip" data-placement="top" title="{{ skill.name }}">
                                                 <div class="inner" style="border-radius: 10px;">
                                                     <img class="svg mx-auto" src="{{ skill.image }}"
                                                         alt="{{ skill.name }}" />
@@ -34,7 +34,7 @@
                                     </div>
                                     <ul>
                                         <li *ngFor="let skill of voir">
-                                            <a target="blank" href="{{ skill.url }}">
+                                            <a target="blank" href="{{ skill.url }}" data-toggle="tooltip" data-placement="top" title="{{ skill.name }}">
                                                 <div class="inner" style="border-radius: 10px;">
                                                     <img class="svg mx-auto" src="{{ skill.image }}"
                                                         alt="{{ skill.name }}" />

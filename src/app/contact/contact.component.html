@@ -27,23 +27,24 @@
                     </ul>
                 </div>
                 <div class="fields">
-                    <form action="/" method="post" [formGroup]="mailForm" (ngSubmit)="onSubmit()" class="contact_form" id="contact_form">
+                    <form [formGroup]="mailForm" (ngSubmit)="onSubmit()" class="contact_form" id="contact_form">
                         <div class="empty_notice"><span>Please Fill Required Fields</span></div>
                         <div class="first">
                             <ul>
                                 <li>
-                                    <input id="name" type="text" formControlName="nameControl" placeholder="Name">
+                                    <input id="name" type="text" formControlName="name" placeholder="Name">
                                 </li>
                                 <li>
-                                    <input id="email" type="text" formControlName="emailControl" placeholder="Email">
+                                    <input id="email" type="text" formControlName="email" placeholder="Email">
                                 </li>
                             </ul>
                         </div>
                         <div class="last">
-                            <textarea id="message" formControlName="msgControl" placeholder="Message"></textarea>
+                            <textarea id="message" formControlName="msg" placeholder="Message"></textarea>
                         </div>
                         <div class="arlo_tm_button">
-                            <button id="send_message" class="btn btn-primary" [disabled]="!mailForm.valid">Send Message</button>
+                            <button id="send_message" type="submit" (click)="createMail(mail)" class="btn btn-primary"
+                                [disabled]="!mailForm.valid">Send Message</button>
                         </div>
                     </form>
                 </div>
