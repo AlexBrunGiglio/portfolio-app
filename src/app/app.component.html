@@ -1,15 +1,35 @@
 <!-- WRAPPER ALL -->
 <div class="arlo_tm_all_wrap">
-    <div class="wrapper_inner">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/logo/color.png" height="70" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav mr-auto mx-auto">
+                <li class="nav-item"><a class="nav-link" routerLink="/about">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/skills">Compétences</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/project">Projets</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/blog">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- <div class="wrapper_inner">
         <div class="arlo_tm_popup_news scrollable">
             <a class="closer" href="#">Close</a>
             <div class="container">
                 <div class="news_inner"></div>
             </div>
-        </div>
+        </div> -->
 
-        <!-- Topbar -->
-        <div class="arlo_tm_topbar">
+    <!-- Topbar -->
+    <!-- <div class="arlo_tm_topbar">
             <div class="topbar_inner">
                 <div class="container">
                     <div class="topbar_in">
@@ -17,7 +37,7 @@
                             <a href="#"><img src="assets/img/logo/color.png" height="70px" alt="" /></a>
                         </div>
                         <div class="trigger">
-                            <a href="#">
+                            <a>
                                 <span class="menu">Menu</span>
                                 <span class="close">Close</span>
                             </a>
@@ -39,11 +59,11 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- /Topbar -->
+        </div> -->
+    <!-- /Topbar -->
 
-        <!-- CLASSIC MENU -->
-        <div class="arlo_tm_classic_menu">
+    <!-- CLASSIC MENU -->
+    <!-- <div class="arlo_tm_classic_menu">
             <div class="container">
                 <div class="inner">
                     <div class="logo">
@@ -62,7 +82,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- /CLASSIC MENU -->
+        </div> -->
+    <!-- /CLASSIC MENU -->
 
-        <router-outlet></router-outlet>
+    <router-outlet></router-outlet>

@@ -10,19 +10,19 @@ export class BackApiService {
 
   constructor(private httpClient: HttpClient) { }
 
-  public getInfos(){
-    return this.httpClient.get(`https://api.alexandrebrungiglio.fr/api/infos`);
+  public getInfos() {
+    return this.httpClient.get(`https://www.api.alexandrebrungiglio.fr/api/infos`);
   }
 
-  public getSkills(){
-    return this.httpClient.get('https://api.alexandrebrungiglio.fr/api/skills')
+  public getSkills() {
+    return this.httpClient.get('https://www.api.alexandrebrungiglio.fr/api/skills')
   }
 
-  public getSchool(){
-    return this.httpClient.get('https://api.alexandrebrungiglio.fr/api/parcours');
+  public getSchool() {
+    return this.httpClient.get('https://www.api.alexandrebrungiglio.fr/api/parcours');
   }
 
-  public postMail(mail){
-    return this.httpClient.post('https://api.alexandrebrungiglio.fr/api/mail', mail);
+  public postMail(mail) {
+    return this.httpClient.post('https://www.api.alexandrebrungiglio.fr/api/mail', mail);
   }
 }
