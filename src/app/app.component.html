@@ -14,12 +14,23 @@
                 <li class="nav-item"><a class="nav-link" routerLink="/about">Accueil</a></li>
                 <li class="nav-item"><a class="nav-link" routerLink="/skills">Compétences</a></li>
                 <li class="nav-item"><a class="nav-link" routerLink="/experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/project">Projets</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="projectDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Projets
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="projectDropdown">
+                        <a class="dropdown-item" routerLink="/project">Github</a>
+                        <a class="dropdown-item" href="https://meteo.alexandrebrungiglio.fr">Weather-App (Beta 1)</a>
+                    </div>
+                </li>
                 <li class="nav-item"><a class="nav-link" routerLink="/blog">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" routerLink="/contact">Contact</a></li>
             </ul>
         </div>
     </nav>
+
+
     <!-- <div class="wrapper_inner">
         <div class="arlo_tm_popup_news scrollable">
             <a class="closer" href="#">Close</a>
